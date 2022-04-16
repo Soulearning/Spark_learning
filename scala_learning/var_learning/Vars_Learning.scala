@@ -1,8 +1,8 @@
 package var_learning
 
-object varsLearning {
+object Vars_Learning {
   def apply(): Unit = {
-    println("varsLearning already executed!")
+    println("Vars_Learning already executed!")
     println("-------------------------------")
   }
 

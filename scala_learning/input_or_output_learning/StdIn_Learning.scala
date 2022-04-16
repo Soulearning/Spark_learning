@@ -7,9 +7,9 @@ import org.mortbay.util.ajax.JSON.Source
 import scala.io
 import scala.io.StdIn
 
-object stdInLearning {
+object StdIn_Learning {
   def apply(): Unit = {
-    println("stdInLearning already executed!")
+    println("StdIn_Learning already executed!")
     println("-------------------------------")
   }
 
