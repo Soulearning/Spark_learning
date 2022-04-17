@@ -2,12 +2,13 @@ package Spark_core
 
 import org.apache.spark.{SparkConf, SparkContext}
 
-class InitContext {
-
-  //private  val context = null
-  def getInit(master : String, name : String): SparkContext ={
+object InitContext {
+  private var context: SparkContext =null
+  def getInit(master : String = "local[*]", name : String= "learning"): SparkContext ={
     this.synchronized{
-        val context = new SparkContext(new SparkConf().setMaster(master).setAppName(name))
+      if(context==null) {
+        context = new SparkContext(new SparkConf().setMaster(master).setAppName(name))
+      }
       return context
     }
   }
