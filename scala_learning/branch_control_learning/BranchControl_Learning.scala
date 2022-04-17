@@ -5,7 +5,8 @@ import scala.util.control.Breaks
 
 object BranchControl_Learning {
   var age : Int = 0
-  def apply(age : Int): Unit = {
+
+  def apply(age: Int): Unit = {
     this.age = age
     println("调用if循环")
     ifControl()

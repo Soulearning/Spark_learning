@@ -1,4 +1,5 @@
 import branch_control_learning.BranchControl_Learning
+import functional_programming_learning.Functional_Programming_Learning
 import input_or_output_learning.StdIn_Learning
 
 object begin {
@@ -10,5 +11,6 @@ object begin {
     var_learning.Vars_Learning()
     StdIn_Learning()
     BranchControl_Learning(6)
+    Functional_Programming_Learning()
   }
 }
